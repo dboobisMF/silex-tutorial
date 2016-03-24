@@ -2,6 +2,11 @@
 <html>
 <body>
 	<h1>Hello</h1>
-	<p> The message is: <?php echo $message ?></p>
+	<p> The message is: <?php echo $message; ?></p>
+	<p> The team behind this glorious message is <?php 
+
+	foreach ($team as $teamMember => $nameykins) {
+		echo $teamMember . '<br>';
+	} ?></p>
 </body>
 </html>

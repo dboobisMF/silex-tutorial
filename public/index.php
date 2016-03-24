@@ -17,6 +17,9 @@ $app->get('/', function() use($app) {
 	// get the message from the Task object
 	$message = $task->getMessage();
 
+	// get the team list from the Task object
+	$team = $task->getTeam();
+
 	// display the View
 	require_once (__DIR__ . '/../views/index.phtml');
 
